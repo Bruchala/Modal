@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  background-image: linear-gradient(135deg, #45c911 0%, #02bb83 100%);
+}
+
+.hidden {
+  display: none;
+}
+.modaltwo {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.modal-show1,
+.modal-show2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 130px;
+  height: 55px;
+  background: white;
+  border-radius: 12px;
+  line-height: 55px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.modal-show1:hover,
+.modal-show2:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+.overflay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.modal1 {
+  z-index: 10;
+  position: fixed;
+  width: 700px;
+  background-image: url("img1.png");
+  background-size: cover;
+  box-shadow: 12px 12px 111px 12px rgb(23, 77, 37);
+  height: 270px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal2 {
+  z-index: 10;
+  position: fixed;
+  width: 700px;
+  background-image: url("img2.webp");
+  background-size: cover;
+  box-shadow: 12px 12px 111px 12px rgb(23, 77, 37);
+  height: 270px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal1,
+.close-modal2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: white;
+  text-align: center;
+  line-height: 22px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: space-around;
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, 130%);
+  z-index: 10;
+}
+.arrow1,
+.arrow2,
+.arrow3,
+.arrow4,
+.arrow5,
+.arrow6 {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  background: white;
+  border-radius: 50%;
+}
+.arrow1:hover,
+.arrow2:hover,
+.arrow3:hover,
+.arrow4:hover,
+.arrow5:hover,
+.arrow6:hover,
+.close-modal1:hover,
+.close-modal2:hover {
+  cursor: pointer;
+  background-color: rgb(241, 234, 225);
+}
